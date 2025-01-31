@@ -14,25 +14,19 @@ Clone the Repository
 
 Clone the project repository to your local machine:
 
-bash
-Copy
-Edit
+
 git clone https://github.com/your-username/your-symfony-project.git
 cd your-symfony-project
 Install Dependencies
 
 Use Composer to install the project's dependencies:
 
-bash
-Copy
-Edit
+
 composer install
 
 Install the Doctrine ORM and MakerBundle:
 
-bash
-Copy
-Edit
+
 composer require symfony/orm-pack
 composer require --dev symfony/maker-bundle
 Configure the Database Connection
@@ -62,9 +56,7 @@ Set Up Environment Variables
 
 Copy the example environment file and edit it as needed:
 
-bash
-Copy
-Edit
+
 cp .env.example .env
 Update the .env file with your database and other service configurations.
 
@@ -72,25 +64,19 @@ Create the Database
 
 Create the database using Symfony's console command:
 
-bash
-Copy
-Edit
+
 php bin/console doctrine:database:create
 Run Migrations
 
 Apply database migrations to set up the schema:
 
-bash
-Copy
-Edit
+
 php bin/console doctrine:migrations:migrate
 Start the Development Server
 
 Start the Symfony development server:
 
-bash
-Copy
-Edit
+
 symfony server:start
 By default, the server runs at http://127.0.0.1:8000.
 
