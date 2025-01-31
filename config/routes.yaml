@@ -1,0 +1,14 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+api_calculer_temps:
+    path: /api/voitures/calculer-temps
+    controller: App\Controller\VoitureController::calculerTemps
+    methods: [POST]
+api_update:
+    path: api/voitures/{id}
+    controller: App\Controller\VoitureController::update
+    methods: [PUT]
